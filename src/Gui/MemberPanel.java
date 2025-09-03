@@ -1,6 +1,7 @@
-package panel;
+package Gui;
 
-import DataClass.Member;
+import Entity.Member;
+import Manager.LibraryManager;
 import util.FontUtil;
 import util.ImagePathUtil;
 import util.ImagePanel;

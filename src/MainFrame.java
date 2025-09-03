@@ -1,4 +1,5 @@
-import panel.*;
+import Gui.*;
+import Manager.LibraryManager;
 import util.AuthManager;
 import util.ImagePathUtil;
 import util.Utilstring;
@@ -29,6 +30,7 @@ public class MainFrame extends JFrame {
         ImageIcon appIcon = new ImageIcon(ImagePathUtil.app_icon);
         setIconImage(appIcon.getImage());
         JTabbedPane tabbedPane = new JTabbedPane();
+
         Supplier<JPanel>[] panelSuppliers = new Supplier[]{
                 () -> new BookPanel(manager),
                 () -> new MemberPanel(manager),

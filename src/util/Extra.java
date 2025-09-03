@@ -1,8 +1,8 @@
 package util;
 
-import panel.*;
+import Gui.*;
+import Manager.LibraryManager;
 
-import javax.swing.*;
 import java.util.function.Supplier;
 
 public class Extra {

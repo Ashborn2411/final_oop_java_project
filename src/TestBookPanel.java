@@ -1,5 +1,5 @@
-import panel.BookPanel;
-import panel.LibraryManager;
+import Gui.BookPanel;
+import Manager.LibraryManager;
 
 import javax.swing.*;
 

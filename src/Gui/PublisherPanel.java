@@ -1,6 +1,7 @@
-package panel;
+package Gui;
 
-import DataClass.Publisher;
+import Entity.Publisher;
+import Manager.LibraryManager;
 import util.*;
 
 import javax.swing.*;
@@ -14,8 +15,6 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
-import static util.Utilstring.labels;
 
 public class PublisherPanel extends JPanel {
     private JTable table;

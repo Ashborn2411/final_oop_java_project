@@ -1,4 +1,4 @@
-package panel;
+package FileHandler;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

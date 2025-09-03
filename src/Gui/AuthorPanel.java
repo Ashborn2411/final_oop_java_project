@@ -1,6 +1,7 @@
-package panel;
+package Gui;
 
-import DataClass.Author;
+import Entity.Author;
+import Manager.LibraryManager;
 import util.*;
 
 import javax.swing.*;

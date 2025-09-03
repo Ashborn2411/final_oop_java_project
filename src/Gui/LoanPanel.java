@@ -1,14 +1,13 @@
-package panel;
+package Gui;
 
-import DataClass.Loan;
+import Entity.Loan;
+import Manager.LibraryManager;
 import util.FontUtil;
 import util.ImagePathUtil;
 import util.ImagePanel;
 import util.TextFieldUtil;
 import javax.swing.*;
 import javax.swing.border.Border;
-import javax.swing.event.TableModelEvent;
-import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import java.awt.*;

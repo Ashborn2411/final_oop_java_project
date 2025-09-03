@@ -1,6 +1,7 @@
-package panel;
+package Gui;
 
-import DataClass.Book;
+import Entity.Book;
+import Manager.LibraryManager;
 import com.toedter.calendar.JDateChooser;
 import util.*;
 
@@ -14,8 +15,6 @@ import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;

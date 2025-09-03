@@ -1,6 +1,7 @@
-package panel;
+package Gui;
 
-import DataClass.LibraryCard;
+import Entity.LibraryCard;
+import Manager.LibraryManager;
 import com.toedter.calendar.JDateChooser;
 import util.*;
 
@@ -15,7 +16,6 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class LibraryCardPanel extends JPanel {

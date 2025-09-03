@@ -1,6 +1,8 @@
-package panel;
+package Manager;
 
-import DataClass.*;
+import Entity.*;
+import FileHandler.FileHandler;
+
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 

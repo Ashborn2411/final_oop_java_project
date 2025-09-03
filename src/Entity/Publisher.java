@@ -1,4 +1,4 @@
-package DataClass;
+package Entity;
 import java.io.Serializable;
 import java.util.UUID;
 
