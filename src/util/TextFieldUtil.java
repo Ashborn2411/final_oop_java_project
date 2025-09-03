@@ -1,7 +1,4 @@
 package util;
-
-package util;
-
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
@@ -28,18 +25,14 @@ public class TextFieldUtil {
         return field;
     }
 
-    /**
-     * Creates a styled JTextField with placeholder text.
-     */
+
     public static JTextField styledField(String placeholder) {
         JTextField field = styledField();
         field.setText(placeholder);
         return field;
     }
 
-    /**
-     * Creates a rounded border with padding.
-     */
+
     private static Border createRoundedBorder() {
         return BorderFactory.createCompoundBorder(
                 BorderFactory.createLineBorder(BORDER_COLOR, 1, true),

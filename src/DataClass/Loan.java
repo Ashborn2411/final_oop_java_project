@@ -1,31 +1,37 @@
+package DataClass;
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.util.UUID;
 
 public class Loan implements Serializable {
     private String loanId;
-    private String bookId;
-    private String memberId;
-    private String loanDate;
+    private String bookId; // Foreign Key: Book
+    private String memberId; // Foreign Key: Member
+    private LocalDateTime loanDate;
+    private LocalDateTime returnDate;
 
-    // Constructor, getters, setters
-    public Loan(String loanId, String bookId, String memberId, String loanDate) {
-        this.loanId = loanId;
+    public Loan(String bookId, String memberId) {
+        this.loanId = UUID.randomUUID().toString();
         this.bookId = bookId;
         this.memberId = memberId;
-        this.loanDate = loanDate;
+        this.loanDate = LocalDateTime.now();
+        this.returnDate = null;
     }
 
-    // Getters and setters
+    // Getters
     public String getLoanId() { return loanId; }
     public String getBookId() { return bookId; }
     public String getMemberId() { return memberId; }
-    public String getLoanDate() { return loanDate; }
+    public LocalDateTime getLoanDate() { return loanDate; }
+    public LocalDateTime getReturnDate() { return returnDate; }
+
+    // Setters
+    public void setReturnDate(LocalDateTime returnDate) { this.returnDate = returnDate; }
 
     public void setBookId(String newBookId) {
     }
 
     public void setMemberId(String newMemberId) {
-    }
-
-    public void setLoanDate(String newLoanDate) {
+        memberId=newMemberId;
     }
 }

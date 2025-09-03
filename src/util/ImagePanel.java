@@ -1,3 +1,5 @@
+package util;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -6,13 +8,14 @@ public class ImagePanel extends JPanel {
 
     public ImagePanel(String imagePath, LayoutManager layout) {
         super(layout);
-        this.backgroundImage = new ImageIcon(imagePath).getImage();
-        setOpaque(false); // Let the image show through
+        backgroundImage = new ImageIcon(imagePath).getImage();
     }
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(backgroundImage, 0, 0, getWidth(), getHeight(), this);
+        if (backgroundImage != null) {
+            g.drawImage(backgroundImage, 0, 0, getWidth(), getHeight(), this);
+        }
     }
 }
